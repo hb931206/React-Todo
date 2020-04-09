@@ -20,13 +20,11 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      tasks,
+      tasks: tasks,
     };
   }
 
-  addItem = (e, item) => {
-    e.preventDefault();
-
+  addItem = (item) => {
     const newItem = {
       name: item,
       id: Date.now(),
